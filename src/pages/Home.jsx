@@ -9,9 +9,9 @@ const Home = () => {
   return (
     <div className="Home">
       <div className="movies-grid">
-        {movies.map((movie) => {
-          <MovieCard movie={movie} key={movie.id} />;
-        })}
+        {movies.map((movie) => (
+          <MovieCard movie={movie} key={movie.id} />
+        ))}
       </div>
     </div>
   );
